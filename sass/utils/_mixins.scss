@@ -1,0 +1,9 @@
+@mixin centeredFlex($type: flex) {
+    display: $type;
+    align-items: center;
+    justify-content: center;
+}
+@mixin paddings($top: 94px) {
+    padding-top: $top;
+    padding-bottom: 94px;
+}

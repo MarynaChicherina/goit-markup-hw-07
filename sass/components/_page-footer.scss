@@ -1,0 +1,40 @@
+.page-footer {
+    background-color: $bg-color-footer-hero;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__container {
+        display: flex;
+        color: $primary-white-color;
+    }
+    &__contacts {
+        margin-right: 70px;
+    }
+    &__address-data {
+        margin-top: 20px;
+        margin-bottom: 0;
+        min-width: 231px;        
+    }
+    &__networks {
+        width: 206px;
+    }
+    &__form {
+        width: 570px;
+        margin-left: 93px;
+    }
+    &__attention {
+        display: block;
+        margin-bottom: 20px;
+        margin-top: 12px;
+         
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+}
+.address {
+    font-size: 14px;
+    line-height: 2;
+    font-style: normal;
+}

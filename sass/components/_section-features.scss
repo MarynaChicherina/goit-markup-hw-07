@@ -1,0 +1,43 @@
+.section-features {
+    @include paddings();
+}
+.features {
+    @extend %list;
+    display: flex; 
+
+    &__pictures {
+        @include centeredFlex();
+        
+        height: 120px;
+        margin-bottom: 30px;
+        border-radius: 4px;
+        background-color: $bg-color-section;
+    }
+    &__title {
+        margin-bottom: 10px;
+    }
+    &__description {
+        font-size: 14px;
+        line-height: 2;   
+}
+}
+.features__item {
+    width: 270px;
+    flex-basis: calc((100% - 3 * $gallery-gap) / 4);  
+
+    &:not(:nth-last-child(-n+1)) {
+        margin-right: $gallery-gap;
+    }
+}
+.features__icon {
+    margin: auto;
+    width: 70px;
+    height: 70px;
+
+    fill: $title-text-color; 
+    transition: fill 250ms $animation-function; 
+    
+    &:hover, &:focus {
+        fill: $accent-color;
+    }
+}
